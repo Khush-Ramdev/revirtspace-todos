@@ -15,9 +15,9 @@ function List({ notes }) {
     };
 
     const handleDeleted = async (id) => {
-        console.log(id);
+        // console.log(id);
         const docref = doc(db, "todos", id);
-        // await deleteDoc(docref);
+        await deleteDoc(docref);
     };
 
     const handleTitleChange = async (id, ogtitle) => {
