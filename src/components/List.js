@@ -11,13 +11,13 @@ function List({ notes }) {
     const handleCompleted = async (id, completed) => {
         const userDoc = doc(db, "todos", id);
         await updateDoc(userDoc, { completed: !completed });
-        console.log(id, completed);
+        // console.log(id, completed);
     };
 
     const handleDeleted = async (id) => {
         console.log(id);
         const docref = doc(db, "todos", id);
-        await deleteDoc(docref);
+        // await deleteDoc(docref);
     };
 
     const handleTitleChange = async (id, ogtitle) => {

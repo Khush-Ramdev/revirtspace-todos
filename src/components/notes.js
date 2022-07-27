@@ -10,7 +10,7 @@ function Notes() {
     const [incomplete, setInComplete] = useState(false);
 
     useEffect(() => {
-        console.log("fetch");
+        // console.log("fetch");
         const colref = collection(db, "todos");
         const q = query(colref, orderBy("timeStamp"), limit(50));
         const unsub = onSnapshot(q, (fetched) => {
@@ -25,9 +25,9 @@ function Notes() {
     }, [notes]);
 
     useEffect(() => {
-        console.log(complete, incomplete);
+        // console.log(complete, incomplete);
         if ((complete && incomplete) || (!complete && !incomplete)) {
-            console.log("here", notes);
+            // console.log("here", notes);
             setfilteredNotes(notes);
         } else if (complete) {
             setfilteredNotes(notes.filter((note) => note.completed === complete));
