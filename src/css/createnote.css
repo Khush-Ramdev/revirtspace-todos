@@ -1,0 +1,65 @@
+.createnote {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 0 5rem;
+    color: white;
+}
+
+.sectionheading {
+    margin: 2rem 0;
+}
+
+.newnote {
+    box-sizing: border-box;
+    display: flex;
+    width: 70%;
+    max-width: 900px;
+    align-self: flex-start;
+}
+
+#title {
+    width: 70%;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+#title:focus {
+    outline: none;
+}
+
+#submit {
+    width: 20%;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    background: #c620a7;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+#submit:hover {
+    background: #da04b3;
+}
+
+.error {
+    text-align: center;
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: rgb(209, 57, 57);
+}
+
+.hidden {
+    display: none;
+}
